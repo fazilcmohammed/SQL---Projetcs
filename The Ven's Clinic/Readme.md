@@ -1,7 +1,10 @@
+# The Vet's Clinic
 This project delves into the fascinating world of animal healthcare through the lens of data analysis. We'll utilize SQL, a powerful language for working with relational databases, to uncover valuable insights from a veterinary clinic's data.
 
-### Why is this data interesting?
+## Project Overview
+In this project, I am assisting the veterinarian clinic to make sense of their data. Their data is dispersed across multiple csv file and they need first to upload all the data to database and then performing the analysis.
 
+### Project Scope
 Veterinary clinics play a crucial role in safeguarding the well-being of animals, forming deep bonds with pet owners and their furry companions. By analyzing their data, we can gain a deeper understanding of:
 
 Patient demographics: Explore the types of animals treated, their breeds, and age distributions.
