@@ -36,16 +36,17 @@ Conducting major analysis:
 ### Tableau Dashboard
 #### Access the live dashboard on Tableau Public : [The Vet's Clinic Dashboard](https://public.tableau.com/app/profile/mohammed.fazil.c/viz/TheVetsClinic/Dashboard1?publish=yes)
 
-The Tableau dashboard was designed to visualize key insights and trends related to COVID-19, including total cases, deaths, vaccinations, and their distribution across countries and regions. The dashboard includes KPIs, text charts, symbol maps, and area graphs to provide a comprehensive overview of the pandemic's impact.
-### What will we achieve?
-Throughout this project, we'll embark on a journey to:
+The Tableau dashboard was designed to visualize key insights and trends in Vets Clini, including total patients, revenue, procedure types, and their details. The dashboard includes KPIs, text charts, column chart, pie chart and line graphs to provide a comprehensive overview of the pandemic's impact.
 
-Clean and prepare the veterinary clinic's data for analysis.
-Craft insightful queries using SQL to extract meaningful information.
-Uncover hidden patterns and trends within the data.
-Visualize our findings to communicate them effectively.
-Ultimately, this project aims to showcase the power of SQL in extracting valuable knowledge from veterinary clinic data, potentially aiding in:
-
-Improving patient care: By identifying common ailments and trends, the clinic can prioritize preventive measures and resource allocation.
-Enhancing operational efficiency: Streamlining appointment scheduling, optimizing inventory management, and identifying areas for cost reduction.
-Building stronger client relationships: Gaining insights into client behavior can help tailor marketing strategies and foster deeper connections with pet owners.
+### Dashboard Components:
+* Key Performance Indicators (KPIs):
+  - Total number of patients
+  - Total revenue generated
+  - Number of procudere types in clinic
+* Column Chart :
+  - Type of animales treated most.
+* Line chart:
+  - Revenue by Procedure per month
+  - Admissions per month
+* Pie Chart:
+  - Total Revenue per Procedure type
