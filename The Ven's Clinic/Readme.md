@@ -17,7 +17,7 @@ The project utilized the following tools and technologies:
 * __SQL (Structured Query Language)__: The primary language used for data manipulation, exploration, and analysis.
 * __SQL Server Management Studio (SSMS)__: For database creation, data parsing, and initial data exploration.
 * __Tableau__: For creating a variety of visualizations and interactive dashboards based on SQL query findings.
-* __Excel__: While not directly used in the project, the dataset obtained from 'Our World in Data' was in Excel format, serving as the initial file type for data exploration.
+* __Excel__: While not directly used in the project, the dataset obtained from online and was in Excel format, serving as the initial file type for data exploration.
 
 This combination of tools facilitated a comprehensive approach to the analysis, from database creation and exploration using SQL to visual representation and interactive dashboards in Tableau. The dataset's initial format in Excel underscored the importance of diverse tools in handling and extracting insights from real-world datasets.
 ### Data Exploration
