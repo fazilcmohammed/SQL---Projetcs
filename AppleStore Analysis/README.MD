@@ -14,4 +14,12 @@ Here, I have a huge collection of data from app store of Apple and going to anal
 
 ## Execution
 ### Questions answered from the dataset:
-### 1) 
+
+__1) What are the Key Performance Indicators obtained from the Dataset?__
+
++ __Total Revenue:__
+  
+      SELECT SUM(total_price) AS Total_Revenue FROM pizza_sales;
+### 1) Check the unique number of apps in both appstoretables.
+
+      SELECT COUNT(DISTINCT PetID) FROM procedureshistory;
