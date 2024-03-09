@@ -1,6 +1,6 @@
-##### Tools used:
-##### SQL - for querying the data
-##### Tableau - for visualization
+### Tools used:
+### SQL - for querying the data
+### Tableau - for visualization
 
 # Business Problem
 The ever-changing mobile landscape is a challenging space to navigate. . The percentage of mobile over desktop is only increasing. Android holds about 53.2% of the smartphone market, while iOS is 43%. To get more people to download the app, they need to make sure they can easily find the app. Mobile app analytics is a great way to understand the existing strategy to drive growth and retention of future user.
