@@ -22,6 +22,7 @@ __1) What are the Key Performance Indicators obtained from the Dataset?__
       SELECT COUNT(id) number_of_apps FROM applestore;
 
 
+
 + __App_Genres:__
 
       SELECT COUNT(DISTINCT prime_genre) app_genres FROM applestore
