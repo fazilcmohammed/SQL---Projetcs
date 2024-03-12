@@ -153,4 +153,7 @@ __8) List the top rated apps for each genre.__
 		FROM applestore) AS a
     WHERE a.RANK = 1
 ![8](https://github.com/fazilcmohammed/SQL---Projetcs/assets/140707546/7a82e9c2-7605-4ee9-8cd5-28523a7066e3)
+
 The top rated apps for each genre includes Color Therapy for adults from Book genre, then Turbo-Scan from genre Business, followed by Mobile Classifieds from genre Catalog. These are 3 books and genres from the huge list.
+
+## Recommendations
