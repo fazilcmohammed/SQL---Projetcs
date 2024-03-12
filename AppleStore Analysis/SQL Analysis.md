@@ -156,4 +156,10 @@ __8) List the top rated apps for each genre.__
 
 The top rated apps for each genre includes Color Therapy for adults from Book genre, then Turbo-Scan from genre Business, followed by Mobile Classifieds from genre Catalog. These are 3 books and genres from the huge list.
 
-## Recommendations
+## Recommendations 
+From the above analysis:
+* The average rating of an application is around 3.5. So a new application should aim for an average rating above 3.5.
+* Apps supporting between 10 and 30 languages have better ratings. Huge quantity of language is not required and instead focus on the right and appropriate language for the app and user.
+* Genres like finance and books have less rating. Which means users needs are not being fully met. So, try to improve the apps in such genres.
+* App description and user rating has a correlation. Users will read the description before downloading an application. If they meet the expectation surely they will install and use the application.
+* Games and Entertainment related apps have high competition.
