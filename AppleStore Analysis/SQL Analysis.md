@@ -86,3 +86,71 @@ __4) Find out the number of apps per genre.__
       GROUP BY prime_genre
       ORDER BY numapps DESC
 ![4](https://github.com/fazilcmohammed/SQL---Projetcs/assets/140707546/2bb8a2a9-9c68-460c-8386-b2b170e7df24)
+
+__5) Check if apps with more supported languages have higher ratings.__
+
+    SELECT CASE 
+	  WHEN lang_num > 10 THEN '<10 languages'
+	  WHEN lang_num BETWEEN 10 AND 30 THEN '10-30 languages'
+	  ELSE '>10 languages'
+		END AS language_bucket,
+		AVG(user_rating) apprating
+    FROM applestore
+    GROUP BY CASE
+		WHEN lang_num > 10 THEN '<10 languages'
+		WHEN lang_num BETWEEN 10 AND 30 THEN '10-30 languages'
+		ELSE '>10 languages'
+		END
+    ORDER BY apprating DESC
+![5](https://github.com/fazilcmohammed/SQL---Projetcs/assets/140707546/d41eee67-a289-4bb8-b68c-7b90a97af2d8)
+
+Language is an important element in applications. From the query above, there is a possible positive correlation between the number of languages supported by an app and its average rating. This means that apps with more supported languages tend to have higher average ratings.
+
+__6) Show the app genres with low rating.__
+
+    SELECT TOP 10 prime_genre, AVG(user_rating) avgrating
+    FROM applestore
+    GROUP BY prime_genre
+    ORDER BY avgrating
+![6](https://github.com/fazilcmohammed/SQL---Projetcs/assets/140707546/9abba487-579f-45fc-89cb-be459bc47003)
+
+Here are the app genres with the lowest average ratings:
+* Catalogs with an average rating of 2.1
+* Finance with an average rating of 2.43
+* Book with an average rating of 2.48
+* Navigation with an average rating of 2.68
+* Lifestyle with an average rating of 2.81
+
+__7) is there have a correlation between the length of the app description and the user rating.__
+
+    SELECT CASE
+		WHEN LEN(b.app_desc) < 100 THEN 'short'
+		WHEN LEN(b.app_desc) BETWEEN 500 AND 1000 THEN 'medium'
+		ELSE 'long'
+		END AS description_length_bucket,
+		AVG(a.user_rating) AS avg_rating
+    FROM applestore a
+    JOIN applestore_description_combined b
+    ON a.id = b.id
+    GROUP BY CASE
+		WHEN LEN(b.app_desc) < 100 THEN 'short'
+		WHEN LEN(b.app_desc) BETWEEN 500 AND 1000 THEN 'medium'
+		ELSE 'long'
+		END
+    ORDER BY avg_rating DESC
+![7](https://github.com/fazilcmohammed/SQL---Projetcs/assets/140707546/df023022-3954-4c41-96df-76ef69c74fb3)
+
+Yes. There is a small correlation between the app description and user rating. We can say that the users are giving a huge description on the app and also giving good rating to the application.
+
+__8) List the top rated apps for each genre.__
+
+    SELECT prime_genre, track_name, user_rating
+    FROM (SELECT
+		prime_genre,
+		track_name,
+		user_rating,
+		RANK() OVER (PARTITION BY prime_genre ORDER BY user_rating DESC, rating_count_tot DESC) AS RANK
+		FROM applestore) AS a
+    WHERE a.RANK = 1
+![8](https://github.com/fazilcmohammed/SQL---Projetcs/assets/140707546/7a82e9c2-7605-4ee9-8cd5-28523a7066e3)
+The top rated apps for each genre includes Color Therapy for adults from Book genre, then Turbo-Scan from genre Business, followed by Mobile Classifieds from genre Catalog. These are 3 books and genres from the huge list.
